@@ -1,0 +1,49 @@
+.invoice-list-status {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  padding: 24px 0;
+}
+
+.invoice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.invoice-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 12px rgba(27, 36, 48, 0.04);
+}
+
+.invoice-info { display: flex; gap: 16px; align-items: baseline; }
+.invoice-id { color: var(--sky-deep); font-size: 0.82rem; }
+.invoice-client { font-weight: 600; }
+.invoice-date { color: var(--text-dim); font-size: 0.82rem; }
+
+.invoice-total { color: var(--pink-deep); font-size: 1rem; font-weight: 600; }
+
+.invoice-actions { display: flex; align-items: center; gap: 10px; }
+.btn-ghost.small { padding: 8px 14px; font-size: 0.8rem; }
+
+.delete-btn {
+  background: transparent;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  transition: color .2s ease, background .2s ease;
+}
+.delete-btn:hover { color: var(--pink-deep); background: rgba(255, 133, 179, 0.12); }
+
+@media (max-width: 700px) {
+  .invoice-row { grid-template-columns: 1fr; gap: 10px; }
+  .invoice-info { flex-wrap: wrap; }
+}

@@ -1,0 +1,90 @@
+.preview-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 100;
+}
+
+.preview-card {
+  background: #fff;
+  color: var(--text);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.preview-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: transparent;
+  font-size: 1.6rem;
+  color: #888;
+  width: 36px; height: 36px;
+  border-radius: 8px;
+}
+.preview-close:hover { background: #eee; }
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+.preview-header h2 { font-size: 1.4rem; }
+.preview-invoice-num { font-size: 0.85rem; color: #555; }
+.dim { color: #777; font-size: 0.85rem; }
+
+.preview-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.preview-dates { text-align: right; font-size: 0.85rem; }
+.label { font-size: 0.65rem; color: #999; display: block; margin-bottom: 4px; }
+
+.preview-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+.preview-table th {
+  text-align: left;
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--sky-deep);
+}
+.preview-table td {
+  padding: 10px 0;
+  font-size: 0.88rem;
+  border-bottom: 1px solid #eee;
+}
+.preview-table th:not(:first-child),
+.preview-table td:not(:first-child) { text-align: right; }
+
+.preview-total {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  align-items: baseline;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+.preview-total-amount { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--pink-deep); }
+
+.preview-notes {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.preview-actions { display: flex; gap: 12px; }
+.preview-actions .btn-ghost { color: var(--text); border-color: #ccc; }

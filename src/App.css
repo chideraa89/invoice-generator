@@ -1,0 +1,16 @@
+.app-header {
+  border-bottom: 1px solid var(--line);
+  padding: 48px 0;
+  background: linear-gradient(135deg, rgba(79,195,247,0.08), rgba(255,182,217,0.1));
+}
+.app-header h1 { font-size: 2.2rem; margin-bottom: 10px; }
+.app-header p { color: var(--text-dim); }
+
+.app-main {
+  padding: 48px 0 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.section-title { font-size: 1.2rem; margin-bottom: 20px; }
